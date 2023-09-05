@@ -15,6 +15,8 @@ The requests sent out are purposely designed to cause red flags and be seen with
 
 ![](https://i.ibb.co/4YQXJbJ/events.png)
 
+## Purpose
+
 This tool is useful for firewall testing and obfuscation/bypass purposes- along with the use to hide current payloads or attacks sent to a web server.
 
 It can essentialy "***Jam***" or create noise in almost any web-facing HTTP based firewalls and words more than well against ***Cloudflare's*** WAF and "***Event***" catcher.
