@@ -30,7 +30,7 @@ Although this tool is capable of sending thousands of false requests a minute fr
 
 ## Install
 
-To use this tool you must have ***python3.9+*** with ***pip3+*** or simular package installer.
+To use this tool you must have ***python3.9+*** with ***pip3+*** or similar package installer.
 
 With the following libaries:
 
