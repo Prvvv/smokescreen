@@ -27,3 +27,14 @@ Although this tool is capable of sending thousands of false requests a minute fr
 
 ![](https://i.ibb.co/98cwZVZ/no2.png)
 
+
+## Install
+
+To use this tool you must have ***python3.9+*** with ***pip3+*** or simular package installer.
+
+With the following libaries:
+
+Colorama - (https://pypi.org/project/colorama/)
+
+Requests - (https://pypi.org/project/requests/)
+
