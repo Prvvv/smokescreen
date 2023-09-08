@@ -25,7 +25,7 @@ It can essentialy "***Jam***" or create noise in almost any web-facing HTTP base
 
 ## Impact/Disclaimer
 
-Although this tool is capable of sending thousands of false requests a minute from individuallly unique IP addresses and user agents, it is not designed for the purposes of performing a "***Denial Of Service Attack***" It still may coincidentally perform one, so be careful.
+Although this tool is capable of sending thousands of false requests a minute from individually unique IP addresses and user agents, it is not designed for the purposes of performing a "***Denial Of Service Attack***" It still may coincidentally perform one, so be careful.
 
 ![](https://i.ibb.co/98cwZVZ/no2.png)
 
@@ -39,4 +39,6 @@ With the following libaries:
 Colorama - (https://pypi.org/project/colorama/)
 
 Requests - (https://pypi.org/project/requests/)
+
+Faker - (https://pypi.org/project/Faker/)
 
