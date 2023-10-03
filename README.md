@@ -1,5 +1,5 @@
 # smokescreen
-Flood a cloudflare/WAF server with thousands of fake traffic and security logs
+Flood a WAF with thousands of fake traffic and security logs
 
 ![](https://i.ibb.co/v3CYfpQ/smokescreenbanner.png)
 
