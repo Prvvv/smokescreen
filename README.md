@@ -1,5 +1,6 @@
 # smokescreen
-> This tool is made for ethical network and WAF testing & identification, designed to test the sensitivity and durability of any network application firewall; any issues or questions: prv@anche.no
+> This tool is made for ethical network testing & identification, designed to test the sensitivity and durability of any network application firewall, for further information or queries contact me at: ***prv@anche.no***
+
 
 ![](https://i.ibb.co/v3CYfpQ/smokescreenbanner.png)
 
