@@ -1,5 +1,5 @@
 # smokescreen
-Flood a WAF with thousands of fake traffic and security logs
+> This tool is made for ethical network and WAF testing & identification, designed to test the sensitivity and durability of any network application firewall; any issues or questions: prv@anche.no
 
 ![](https://i.ibb.co/v3CYfpQ/smokescreenbanner.png)
 
