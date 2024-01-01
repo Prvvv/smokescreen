@@ -10,7 +10,7 @@ This tool uses many frequently updated lists of open source proxies and user age
 
 Each flagged request comes with its own unique and anonymous IP address and randomly generated user agent, allowing an attacker to ***"blend in amongs the noise"*** and obfuscate themself in the fake traffic created.
 
-![](https://i.ibb.co/PT5KTh0/In-Shot-20230905-195343771.jpg)
+![](https://i.ibb.co/MRVt3vN/demo.png)
 
 The requests sent out are purposely designed to cause red flags and be seen within a victims firewall, in order to mask and/or obfuscate potentially other malicious traffic an attacker may send, it does this by sending the HTTP/1.1 requests within irregular methods or traffic spikes, not enough to cause a DDOS- but enough to hide other activities that the firewall may be flagging at the time or current "***under the radar***" DDOS attacks.
 
