@@ -21,37 +21,39 @@ print("\n[NOTE]: It may take some time to set up proxy connections ... ")
 
 
 def make_request(proxy_url):
-    fake = Faker()
-    headers = {'User-Agent': fake.user_agent()}
 
-    proxy_url = "http://" + proxy_url
-    list_proxy = [proxy_url]
-    proxy_cycle = cycle(list_proxy)
+    try:
+        fake = Faker()
+        headers = {'User-Agent': fake.user_agent()}
 
-    for i in range(1):
-        proxy = next(proxy_cycle)
-        proxies = {"http": proxy, "https": proxy}
-        try:
-            r = requests.get(url=targ, proxies=proxies, headers=headers).text
-            print(" ", proxy, " ===> [REQUESTED]")
-        except Exception as E:
-            pass
+        proxy_url = "http://" + proxy_url
+        list_proxy = [proxy_url]
+        proxy_cycle = cycle(list_proxy)
 
+        for i in range(1):
+            proxy = next(proxy_cycle)
+            proxies = {"http": proxy, "https": proxy}
+            try:
+                r = requests.get(url=targ, proxies=proxies, headers=headers).text
+                print(" ", proxy, " ===> [REQUESTED]")
+            except Exception as E:
+                pass
 
-def smoke():
-    time.sleep(25)
-    print("\n[NOTE] Now smokescreening: ", targ)
+    except Exception as E:
+        print(E)
+        pass
 
-
-smoke_thread = threading.Thread(target=smoke)
-smoke_thread.start()
 
 proxy_urls = [
     'https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/http.txt',
-    'https://raw.githubusercontent.com/mertguvencli/http-proxy-list/main/proxy-list/data.txt',
-    'https://raw.githubusercontent.com/rx443/proxy-list/main/online/all.txt',
     'https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-http.txt',
-    'https://raw.githubusercontent.com/saschazesiger/Free-Proxies/master/proxies/http.txt'
+    'https://raw.githubusercontent.com/ShiftyTR/Proxy-List/master/http.txt',
+    'https://raw.githubusercontent.com/ShiftyTR/Proxy-List/master/https.txt',
+    'https://raw.githubusercontent.com/clarketm/proxy-list/master/proxy-list-raw.txt',
+    'https://raw.githubusercontent.com/prxchk/proxy-list/main/http.txt',
+    'https://raw.githubusercontent.com/zevtyardt/proxy-list/main/http.txt'                              #configure proxy urls, must be in ip:port format
+    
+    
 ]
 
 threads = []
@@ -62,11 +64,11 @@ for proxy_url in proxy_urls:
         threads.append(thread)
         thread.start()
     except Exception as E:
+        print(E)
         pass
 
 for thread in threads:
-    thread.join()
-
-
-
-
+    try:
+        thread.join()
+    except:
+        pass
